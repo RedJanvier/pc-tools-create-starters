@@ -22,8 +22,8 @@ mongoose
    })
    .then(() => {
        app.listen(
-           5000,
-           console.log('Server started at: http://localhost:5000/graphql')
+           PORT,
+           console.log(`Server started at: http://localhost:${PORT}/api/v1/`)
        );
    })
    .catch(console.log);
